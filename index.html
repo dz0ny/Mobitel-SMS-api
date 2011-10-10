@@ -1,0 +1,22 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+	<script src="mobitelAPI.js" type="text/javascript" charset="utf-8"></script>
+                
+    <title>MobitelAPI</title>
+  </head>
+  <body style="padding: 20px;">
+<div>
+<textarea id="code" cols="120" rows="30">
+	var api = MobitelAPI.prijava("031041051","geslo",function(prijavljen){
+		if (prijavljen){
+			//MobitelAPI.Monitor(function(xml){alert(xml)});
+			//MobitelAPI.getImenik(function(xml){console.log(xml)});
+			api.SendSMS("7515","Narocam prirocnik mov tomaz Zveglic, leskoskova 9d, 1000 ljubljana",function(koncano){alert(koncano)});
+		};
+	});
+</textarea>
+</div>
+
+
+  </body>
+</html>
